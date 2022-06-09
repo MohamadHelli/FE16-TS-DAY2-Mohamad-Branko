@@ -25,10 +25,17 @@ class Vehicles {
     `;
     }
 }
+class Motorbikes extends Vehicles {
+    constructor(model, kilometers, fuel, year, img, type) {
+        super(model, kilometers, fuel, year, img);
+        this.type = type;
+    }
+}
 new Vehicles("BMW", 6000, "diesel", "2021,01,01", "https://cdn.pixabay.com/photo/2019/10/19/03/50/bmw-4560531__340.jpg");
 new Vehicles("Ferrari", 10000, "benzin", "2020,01,01", "https://cdn.pixabay.com/photo/2020/02/20/18/43/car-4865483_960_720.jpg");
 new Vehicles("BMW", 6000, "diesel", "2021,01,01", "https://cdn.pixabay.com/photo/2019/10/19/03/50/bmw-4560531__340.jpg");
 new Vehicles("Ferrari", 10000, "benzin", "2020,01,01", "https://cdn.pixabay.com/photo/2020/02/20/18/43/car-4865483_960_720.jpg");
+new Motorbikes("BMW", 6000, "diesel", "2021,01,01", "https://cdn.pixabay.com/photo/2015/12/09/13/14/motorcycle-1084694__340.jpg", "sport");
 // (document.getElementById("card") as HTMLElement).innerHTML = car.printcar();
 // (document.getElementById("card") as HTMLElement).innerHTML += car1.printcar();
 for (let val of cars) {
