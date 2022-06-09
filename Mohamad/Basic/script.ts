@@ -1,0 +1,1 @@
+let num1 : Number = 10;
