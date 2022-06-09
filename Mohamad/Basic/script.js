@@ -17,9 +17,9 @@ class Person extends Cart {
         this.salary = salary;
         this.jobLocation = jobLocation;
     }
-    printcart1() {
+    printcart() {
         return `Hello there, My name is  ${this.name} and I am ${this.age} years old, and I am a ${this.jobTitle} and I get ${this.salary} every month, and I work in ${this.jobLocation}`;
     }
 }
 let person1 = new Person("Mohamad", 29, "IT", 2000, "Vienna");
-document.getElementById("cartnew").innerHTML = person1.printcart1();
+document.getElementById("cartnew").innerHTML = person1.printcart();
